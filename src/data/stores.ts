@@ -10,19 +10,19 @@ type StoreType = {
 
 const gameStoreData: StoreType = {
   warrior: {
-    attributes: [],
-    equipment: ["axe"],
-    skills: [],
+    attributes: ["Strength", "Invincibility"],
+    equipment: ["Sword", "Shield"],
+    skills: ["Swimming", "Double jump"],
   },
   mage: {
-    attributes: [],
-    equipment: ["dague"],
-    skills: [],
+    attributes: ["Agility", "Calm"],
+    equipment: ["Pendant", "Cape"],
+    skills: ["Flight", "Mind Control"],
   },
   taoist: {
-    attributes: [],
-    equipment: ["blue"],
-    skills: [],
+    attributes: ["Invisibility", "Agility"],
+    equipment: ["Ying", "Yang"],
+    skills: ["Flight", "light speed run"],
   },
 };
 
