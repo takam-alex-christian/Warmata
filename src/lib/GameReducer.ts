@@ -28,6 +28,20 @@ function gameReducer(
 
       return { ...prevState, currentClass: playerClasses[nextClassIndex] };
     }
+    case "changed_prev_class": {
+      const playerClasses: Array<PlayerClassType> = Object.keys(
+        gameStoreData
+      ).sort() as Array<PlayerClassType>;
+
+      let currentClassIndex = playerClasses.findIndex(
+        (eachClass) => eachClass == prevState.currentClass
+      );
+
+      let prevClassIndex =
+        currentClassIndex > 0 ? --currentClassIndex : playerClasses.length - 1;
+
+      return { ...prevState, currentClass: playerClasses[prevClassIndex] };
+    }
     default: {
       return { ...prevState };
     }

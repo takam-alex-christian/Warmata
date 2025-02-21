@@ -11,6 +11,9 @@ type GameReducerActionType =
     }
   | {
       type: "changed_next_class";
+    }
+  | {
+      type: "changed_prev_class";
     };
 
 export type { GameReducerActionType, GameStateType, PlayerClassType };
