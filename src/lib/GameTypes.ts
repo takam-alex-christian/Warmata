@@ -9,4 +9,4 @@ type GameReducerActionType = {
   payload: { className: PlayerClassType };
 };
 
-export type { GameReducerActionType, GameStateType };
+export type { GameReducerActionType, GameStateType, PlayerClassType };
