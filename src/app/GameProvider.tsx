@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode, useReducer } from "react";
 
 import { GameContext, gameInitialState } from "@/lib/GameContext";
