@@ -1,5 +1,9 @@
-import Image from "next/image";
+import GameScreenFeature from "@/features/GameScreenFeature";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div className="bg-blue-200 h-svh w-svw">
+      <GameScreenFeature />
+    </div>
+  );
 }
