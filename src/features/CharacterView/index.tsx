@@ -36,7 +36,7 @@ function CharacterView() {
           className="relative h-10 w-full text-center"
         >
           {Object.keys(gameStoreData)
-            .toSorted()
+            .sort()
             .map((eachClass) => {
               return (
                 <div key={eachClass}>
@@ -69,7 +69,7 @@ function CharacterView() {
           </div>
           <div key="center" className="w-[400px] min-h-[590px]">
             {Object.keys(gameStoreData)
-              .toSorted()
+              .sort()
               .map((eachClass) => {
                 return (
                   <div key={eachClass}>
