@@ -6,8 +6,10 @@ const gameInitialState: GameStateType = {
 };
 
 const GameContext = createContext<{
-  GameState: GameStateType;
-  GameDispatch: Dispatch<GameReducerActionType>;
-}>({ GameState: gameInitialState, GameDispatch: () => {} });
+  gameState: GameStateType;
+  gameDispatch: Dispatch<GameReducerActionType>;
+}>({ gameState: gameInitialState, gameDispatch: () => {} });
 
 export default GameContext;
+
+export { GameContext, gameInitialState };
