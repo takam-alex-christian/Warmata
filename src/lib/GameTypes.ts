@@ -4,9 +4,13 @@ type GameStateType = {
   currentClass: PlayerClassType;
 };
 
-type GameReducerActionType = {
-  type: "changed_class";
-  payload: { className: PlayerClassType };
-};
+type GameReducerActionType =
+  | {
+      type: "changed_class";
+      payload: { className: PlayerClassType };
+    }
+  | {
+      type: "changed_next_class";
+    };
 
 export type { GameReducerActionType, GameStateType, PlayerClassType };
