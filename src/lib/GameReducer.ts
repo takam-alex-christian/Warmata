@@ -23,7 +23,7 @@ function gameReducer(
         (eachClass) => eachClass == prevState.currentClass
       ); // certainly not -1
 
-      let nextClassIndex =
+      const nextClassIndex =
         currentClassIndex < playerClasses.length - 1 ? ++currentClassIndex : 0;
 
       return { ...prevState, currentClass: playerClasses[nextClassIndex] };
@@ -37,7 +37,7 @@ function gameReducer(
         (eachClass) => eachClass == prevState.currentClass
       );
 
-      let prevClassIndex =
+      const prevClassIndex =
         currentClassIndex > 0 ? --currentClassIndex : playerClasses.length - 1;
 
       return { ...prevState, currentClass: playerClasses[prevClassIndex] };

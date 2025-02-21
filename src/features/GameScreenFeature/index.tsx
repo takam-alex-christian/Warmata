@@ -8,7 +8,7 @@ import CharacterView from "../CharacterView";
 import StoresView from "../StoresView";
 
 function GameScreenFeature() {
-  const { gameState, gameDispatch } = useContext(GameContext);
+  const { gameState } = useContext(GameContext);
 
   return (
     <div
